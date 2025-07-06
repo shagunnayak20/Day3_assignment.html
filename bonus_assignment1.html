@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Fest Registration</title>
+</head>
+<body>
+    <h1>Tech Fest 2025 Registration</h1>
+    <p>Sign up to participate in the biggest tech event of the year!</p>
+
+    <form action="/" method="POST">
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="year">Year of Study:</label>
+            <select id="year" name="year">
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+                <option value="grad">Graduate</option>
+            </select>
+        </div>
+        <br>
+        <fieldset>
+            <legend>Choose your T-Shirt Size:</legend>
+            <input type="radio" id="size_s" name="tshirt_size" value="S">
+            <label for="size_s">Small</label><br>
+            <input type="radio" id="size_m" name="tshirt_size" value="M">
+            <label for="size_m">Medium</label><br>
+            <input type="radio" id="size_l" name="tshirt_size" value="L">
+            <label for="size_l">Large</label><br>
+            <input type="radio" id="size_xl" name="tshirt_size" value="XL">
+            <label for="size_xl">Extra Large</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Which events are you interested in? (Select all that apply)</legend>
+            <input type="checkbox" id="event_coding" name="events" value="coding">
+            <label for="event_coding">Coding Competition</label><br>
+            <input type="checkbox" id="event_robotics" name="events" value="robotics">
+            <label for="event_robotics">Robotics Challenge</label><br>
+            <input type="checkbox" id="event_hackathon" name="events" value="hackathon">
+            <label for="event_hackathon">Hackathon</label><br>
+            <input type="checkbox" id="event_gaming" name="events" value="gaming">
+            <label for="event_gaming">Gaming Tournament</label>
+        </fieldset>
+        <br>
+        <div>
+            <label for="comments">Any questions or comments?</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </div>
+        <br>
+        <button type="submit">Register Now</button>
+    </form>
+</body>
+</html>
